@@ -1,0 +1,44 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class tax{
+    public static void main(String arg[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        String name=sc.next();
+        double sal=sc.nextDouble();
+
+        double tax;
+        if(sal<500000)
+        {
+            tax=0;
+        }
+        else if(sal>=500000 && sal<=750000)
+        {
+            tax=sal*0.05;
+        }
+        else if(sal>750000 && sal<=1000000)
+        {
+            tax=sal*0.075;
+        }
+        else if(sal>1000000 && sal<=1500000)
+        {
+            tax=sal*0.10;
+        }
+        else if(sal>1500000 && sal<=2000000)
+        {
+            tax=sal*0.15;
+        }
+        else
+        {
+            tax=sal*0.20;
+        }
+
+        System.out.println("emp no="+num);
+        System.out.println("emp name="+name);
+        System.out.println("emp salary="+sal);
+        System.out.println("tax="+tax);
+    }
+}

@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class sum{
+    public static void main(String arg[])
+    {
+        int n1,n2,n3,n4,n5;
+        System.out.println("enter the nums=");
+        Scanner sc=new Scanner(System.in);
+        n1=sc.nextInt();
+        n2=sc.nextInt();
+        n3=sc.nextInt();
+        n4=sc.nextInt();
+        n5=sc.nextInt();
+        int sum=n1+n2+n3+n4+n5;
+        float avg=sum/5;
+        System.out.println("sum of the num="+sum);
+        System.out.println("avg of num ="+avg);
+    }
+}

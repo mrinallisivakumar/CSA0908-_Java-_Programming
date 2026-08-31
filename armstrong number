@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.lang.*;
+
+class arm{
+    public static void main(String arg[])
+    {
+        int n,s=0,r;
+        
+        System.out.println("enter the num=");
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int m=n;
+        while(n>0)
+        {
+            r=n%10;
+            s=s+(r*r);
+            n=n/10;
+        }
+        if(s==m)
+        {
+            System.out.println("armstrong num");
+        }
+        else
+        {
+            System.out.println("not armstrong no");
+        }
+    }
+}
